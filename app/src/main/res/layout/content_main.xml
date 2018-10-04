@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+    <Switch
+        android:id="@+id/alarm_switch2"
+        android:text="알람설정"
+        android:textOn="켜짐"
+        android:textOff="꺼짐"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <!-- 그리드 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lay_1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_what" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="칵테일?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lay_1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_nation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나라별" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lay_2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_recipt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제조법" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lay_1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_place" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="칵테일 맛집" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lay_4"
+            android:layout_below="@+id/lay_2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_manage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일정관리" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lay_5"
+            android:layout_below="@+id/lay_3"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cock_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관련정보" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

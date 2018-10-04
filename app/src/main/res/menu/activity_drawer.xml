@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/cock_what"
+            android:title="칵테일 이란?" />
+        <item
+            android:id="@+id/cock_nation"
+            android:title="국가별 칵테일" />
+        <item
+            android:id="@+id/cock_recipt"
+            android:title="칵테일 제조법" />
+        <item
+            android:id="@+id/cock_place"
+            android:title="맛집" />
+        <item
+            android:id="@+id/cock_manage"
+            android:title="일정 관리" />
+        <item
+            android:id="@+id/cock_info"
+            android:title="관련정보" />
+
+</menu>
